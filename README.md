@@ -1,91 +1,133 @@
-<!-- Alan Manoj's Portfolio -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alan Manoj | Data Analyst Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #e2ebf0);
+      color: #1f1f1f;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #ffffffcc;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: #555;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .project img {
+      max-width: 100%;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #666;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
 
-<h1 align="center"> Alan Manoj's Data Portfolio</h1>
+<header>
+  <h1>Alan Manoj</h1>
+  <p>Data Analyst | Power BI | Tableau | Excel | BSc Mathematics</p>
+  <p>
+    <a href="mailto:alanmanoj221@gmail.com">alanmanoj221@gmail.com</a> |
+    <a href="https://www.linkedin.com/in/alan-manoj-a6636a324" target="_blank">LinkedIn</a>
+  </p>
+</header>
 
-<p align="center">
-  <em>BSc Mathematics Graduate • Data Analyst • Dashboard Developer • Based in Kerala, India</em>
-</p>
+<div class="container">
+  <h2>About Me</h2>
+  <p>
+    I'm a passionate data analyst with a background in Mathematics and strong skills in data visualization, dashboard creation, and statistical thinking. I love turning raw data into clear, compelling insights that support smarter decision-making.
+  </p>
 
-<p align="center">
-  <a href="www.linkedin.com/in/alan-manoj-a6636a324">LinkedIn</a> •
-  <a href="https://github.com/alanmanoj007">GitHub</a> •
-  <a href="mailto:alanmanoj221@gmail.com">Email</a>
-</p>
+  <h2>Projects</h2>
 
----
+  <div class="project">
+    <h3><a href="https://github.com/alanmanoj007/Powerbi-Hospital-Emergency-Room-Dashboard">Hospital Emergency Room Dashboard – Power BI</a></h3>
+    <p>Analyzed ER data to identify trends in patient flow, wait times, and treatment patterns. Built an interactive Power BI dashboard for hospital decision-making.</p>
+    <ul>
+      <li>Peak visit time: 6–9 PM</li>
+      <li>25%+ patients waited over 30 minutes</li>
+      <li>Severe cases more common in early mornings</li>
+      <li>Weekend treatments took longer on average</li>
+    </ul>
+    <img src="https://github.com/user-attachments/assets/839035dd-aab6-41ed-b74e-4314ba9239f2" alt="Hospital ER Dashboard">
+  </div>
 
-##  About Me
+  <div class="project">
+    <h3><a href="https://github.com/alanmanoj007/Road-Accidents-in-United-Kingdom-A-Tableau-Project">Road Accidents in the UK – Tableau</a></h3>
+    <p>Created a Tableau dashboard to explore accident data, focusing on causes, timing, and location-based risk zones.</p>
+    <ul>
+      <li>Heatmaps for high-risk zones</li>
+      <li>Filters for time, weather, and road types</li>
+      <li>Trend analysis year over year</li>
+      <li>Metrics: injuries, fatalities, accident count</li>
+    </ul>
+    <img src="https://github.com/user-attachments/assets/1b240f57-7c3b-4b83-af33-b2a8c33efeff" alt="UK Accidents Dashboard">
+  </div>
 
-Hello! I'm **Alan Manoj**, a detail-oriented data analyst with a strong foundation in mathematics and a passion for transforming complex data into meaningful business insights.
+  <div class="project">
+    <h3><a href="https://github.com/alanmanoj007/Excel-Project-Gym-Supplements1">Gym Supplements Sales Dashboard – Excel</a></h3>
+    <p>Excel dashboard to analyze gym supplement sales, highlight top-performing categories, and evaluate discount strategies.</p>
+    <ul>
+      <li>Sales by channel: Retail, Online, Wholesale</li>
+      <li>Top-selling products by revenue</li>
+      <li>Impact of discounts on profitability</li>
+      <li>Sunburst chart for product hierarchy</li>
+    </ul>
+    <img src="https://github.com/user-attachments/assets/8b84b0c4-2d8d-4af2-9470-4949717004fb" alt="Gym Sales Dashboard">
+  </div>
 
--  **BSc Mathematics Graduate (2021)**
--  Tools: Power BI, Tableau, Excel, SQL, Python, Machine Learning
--  Strong in statistical thinking and pattern recognition
--  Focused on storytelling through data visualization
--  Gym enthusiast and dedicated learner
+  <h2>Contact</h2>
+  <p>
+    Feel free to reach out for job opportunities, collaborations, or freelance projects.<br>
+    <strong>Email:</strong> <a href="mailto:alanmanoj221@gmail.com">alanmanoj221@gmail.com</a><br>
+    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alan-manoj-a6636a324" target="_blank">linkedin.com/in/alan-manoj-a6636a324</a>
+  </p>
+</div>
 
----
+<footer>
+  © 2025 Alan Manoj. All rights reserved.
+</footer>
 
-##  Projects
-
----
-
-###  [Hospital Emergency Room Dashboard – Power BI](https://github.com/alanmanoj007/Powerbi-Hospital-Emergency-Room-Dashboard)
-
-Created an interactive Power BI dashboard to analyze ER data and help hospitals make data-driven decisions around patient flow and treatment efficiency.
-
-**Tools:** Power BI, Excel, DAX  
-**Highlights:**
--  Peak visits between **6–9 PM**
--  Over **25%** of patients waited more than 30 minutes
--  Severe cases common during **early mornings**
--  **Weekend treatments** took longer on average
-
-**Dashboard Preview:**  
-<img src="https://github.com/user-attachments/assets/839035dd-aab6-41ed-b74e-4314ba9239f2" alt="Hospital Dashboard" width="800">
-
----
-
-###  [Road Accidents in the UK – Tableau](https://github.com/alanmanoj007/Road-Accidents-in-United-Kingdom-A-Tableau-Project)
-
-Built a Tableau dashboard to uncover insights into road accidents across the UK, focusing on locations, causes, and time-based trends.
-
-**Tools:** Tableau, Excel  
-**Highlights:**
--  Heatmaps of **accident-prone zones**
--  Filters by **weather**, **road conditions**, **vehicle types**
--  Year-over-year trend analysis
--  Tracked **fatalities**, **injuries**, and incident count
-
-**Dashboard Preview:**  
-<img src="https://github.com/user-attachments/assets/1b240f57-7c3b-4b83-af33-b2a8c33efeff" alt="UK Accidents Dashboard" width="800">
-
----
-
-###  [Gym Supplement Sales – Excel Dashboard](https://github.com/alanmanoj007/Excel-Project-Gym-Supplements1)
-
-Developed a comprehensive Excel dashboard to visualize sales trends and profitability of gym supplements across multiple channels.
-
-**Tools:** Excel, Pivot Tables, Sunburst Charts  
-**Highlights:**
--  Sales & profit by **channel** (Retail, Online, Wholesale)
--  Identified **top-selling products**
--  Evaluated **discount impact** on profit
--  Used **sunburst chart** for category-wise breakdown
-
-**Dashboard Preview:**  
-<img src="https://github.com/user-attachments/assets/8b84b0c4-2d8d-4af2-9470-4949717004fb" alt="Gym Sales Dashboard" width="800">
-
----
-
-##  Contact Me
-
-I’m open to freelance projects, full-time roles, and collaboration opportunities!
-
--  **Email:** alanmanoj221@gmail.com  
--  **LinkedIn:** [linkedin.com/in/alanmanoj007](www.linkedin.com/in/alan-manoj-a6636a324)  
--  **GitHub:** [github.com/alanmanoj007](https://github.com/alanmanoj007)
-
----
-
-<sub>Designed with love by Alan Manoj</sub>
+</body>
+</html>
