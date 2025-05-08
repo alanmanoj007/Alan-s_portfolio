@@ -8,10 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #f0f2f5;
+      background: linear-gradient(to right, #f0f2f5, #e3edf8);
       color: #1e1e2f;
     }
 
@@ -60,33 +64,101 @@
       color: #ff5a5f;
     }
 
-    .section {
+    header.hero {
+      background-color: #1b1f23;
+      color: white;
+      padding: 2.5rem 1rem 2rem;
+      text-align: center;
+    }
+
+    header.hero h1 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+
+    header.hero p {
+      font-size: 1rem;
+      color: #c0c0c0;
+      margin-bottom: 1rem;
+    }
+
+    .resume-button {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #007acc;
+      color: white;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.2s;
+      font-size: 1rem;
+    }
+
+    .resume-button:hover {
+      background-color: #005a9e;
+      transform: scale(1.05);
+    }
+
+    .contact-bar {
+      font-size: 0.95rem;
+    }
+
+    .contact-bar a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #60bdf3;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .contact-bar a:hover {
+      color: #ff5a5f;
+    }
+
+    .container {
       max-width: 1000px;
       margin: 2rem auto;
       padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    .project img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+      height: auto;
+      loading: lazy;
+    }
+        .container-box {
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 1000px;
+      background-color: #ffffff;
       border-radius: 12px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
       transition: background-color 0.3s ease;
     }
 
-    .section:nth-of-type(odd) { background-color: #f9f9fc; }
-    .section:nth-of-type(even) { background-color: #eef5f9; }
+    .container-box:nth-of-type(1) { background-color: #f9f9fc; }
+    .container-box:nth-of-type(2) { background-color: #f9f9fc; }
+    .container-box:nth-of-type(3) { background-color: #f9f9fc; }
+    .container-box:nth-of-type(4) { background-color: #f9f9fc; }
+    .container-box:nth-of-type(5) { background-color: #f9f9fc; }
 
-    .section h2 {
+    .container-box h2 {
       color: #1b1f23;
       margin-top: 0;
     }
 
-    .section p, .section ul {
+    .container-box p, .container-box ul {
       color: #555;
-    }
-
-    .left-align {
-      text-align: left;
-    }
-
-    .right-align {
-      text-align: right;
     }
 
     @media (max-width: 768px) {
@@ -111,6 +183,30 @@
       .nav-links.show {
         display: flex;
       }
+
+      .nav-links a {
+        padding: 10px;
+        font-size: 1rem;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #ffffff;
+      background-color: #1b1f23;
+      font-size: 0.95rem;
+      border-top: 2px solid #444;
+    }
+
+    footer a {
+      color: #60bdf3;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ff5a5f;
     }
   </style>
 </head>
