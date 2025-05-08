@@ -23,7 +23,6 @@
     .topnav {
       background-color: #1b1f23;
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       padding: 0.8rem 1.5rem;
@@ -41,13 +40,19 @@
       flex-shrink: 0;
     }
 
-    .topnav .nav-links {
+    .menu-toggle {
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+      color: #ddd;
+    }
+
+    .nav-links {
       display: flex;
-      flex-wrap: wrap;
       gap: 15px;
     }
 
-    .topnav .nav-links a {
+    .nav-links a {
       color: #ddd;
       text-decoration: none;
       font-weight: 500;
@@ -55,151 +60,60 @@
       transition: color 0.3s ease;
     }
 
-    .topnav .nav-links a:hover {
+    .nav-links a:hover {
       color: #ff5a5f;
-    }
-
-    header.hero {
-      background-color: #1b1f23;
-      color: white;
-      padding: 2.5rem 1rem 2.5rem;
-      text-align: center;
-    }
-
-    header.hero h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-
-    header.hero p {
-      font-size: 1rem;
-      color: #c0c0c0;
-    }
-
-    .contact-bar {
-      margin-top: 0.8rem;
-      font-size: 0.85rem;
-    }
-
-    .contact-bar a {
-      margin: 0 8px;
-      text-decoration: none;
-      color: #60bdf3;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    .contact-bar a:hover {
-      color: #ff5a5f;
-    }
-
-    .container {
-      max-width: 95%;
-      margin: 2rem auto;
-      padding: 1.5rem;
-      background-color: #ffffff;
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-    }
-
-    h2 {
-      color: #2a3f65;
-      border-bottom: 2px solid #dde4ec;
-      padding-bottom: 6px;
-      margin-top: 2.5rem;
-      font-size: 1.5rem;
-    }
-
-    h3 {
-      margin-bottom: 0.4rem;
-      color: #0077b6;
-      font-size: 1.3rem;
-    }
-
-    ul {
-      margin-top: 0.5rem;
-      padding-left: 1.2rem;
-    }
-
-    ul li {
-      margin-bottom: 0.4rem;
-    }
-
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .project img {
-      width: 100%;
-      max-width: 600px;
-      display: block;
-      margin: 1rem auto;
-      border-radius: 8px;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
-      height: auto;
-      loading: lazy;
-    }
-
-    .resume-button {
-      margin-top: 20px;
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007acc;
-      color: white;
-      border-radius: 6px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
-
-    .resume-button:hover {
-      background-color: #005a9e;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      color: #666;
-      font-size: 0.95rem;
     }
 
     @media (max-width: 768px) {
-      .topnav {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
         flex-direction: column;
-        align-items: flex-start;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: #1b1f23;
+        width: 200px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        gap: 10px;
       }
 
-      .topnav .logo {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
+      .nav-links.show {
+        display: flex;
       }
 
-      header.hero h1 {
-        font-size: 2rem;
-      }
-
-      header.hero p {
-        font-size: 0.95rem;
-      }
-
-      .container {
-        padding: 1.2rem;
-      }
-
-      .resume-button {
-        padding: 8px 18px;
+      .nav-links a {
+        padding: 10px;
+        font-size: 1rem;
       }
     }
   </style>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
 </head>
 <body>
 
+<div class="topnav">
+  <div class="logo">Alan Manoj</div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="Alan_Resume.pdf" target="_blank">Resume</a>
+  </div>
+</div>
 
   <!-- Sticky Top Navigation Bar -->
   <div class="topnav">
