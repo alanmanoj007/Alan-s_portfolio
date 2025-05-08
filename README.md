@@ -11,6 +11,10 @@ Analyzed ER data to uncover patterns in patient flow, wait times, and treatment 
 - Severe cases more common in early mornings
 - Weekend treatments took longer on average
 
+## Overview of Dashboard
+![Screenshot 2025-03-08 124151.png]
+
+
 # <a href="https://github.com/alanmanoj007/Road-Accidents-in-United-Kingdom-A-Tableau-Project">Project 2: Road Accidents in United Kingdom-a Tableau_Project</a>
 
 Designed a Tableau dashboard to analyze patterns in road accidents using real-world data. The goal was to identify high-risk zones, accident causes, and trends over time to support public safety planning.
