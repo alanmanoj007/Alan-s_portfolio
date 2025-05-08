@@ -1,3 +1,4 @@
+You said:
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +20,7 @@
       color: #1e1e2f;
     }
 
+    /* Fixed Top Nav */
     .topnav {
       background-color: #1b1f23;
       display: flex;
@@ -35,30 +37,56 @@
     .topnav .logo {
       font-size: 1.3rem;
       font-weight: bold;
+      letter-spacing: 1px;
+      flex-shrink: 0;
       color: #ffffff;
     }
 
-    .resume-button {
-      margin-top: 20px;
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #007acc;
-      color: white;
-      border-radius: 8px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background-color 0.3s, transform 0.2s;
-      font-size: 1rem;
+    .menu-toggle {
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+      color: #ddd;
     }
 
-    .resume-button:hover {
-      background-color: #005a9e;
-      transform: scale(1.05);
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      color: #ddd;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ff5a5f;
+    }
+
+    header.hero {
+      background-color: #1b1f23;
+      color: white;
+      padding: 3rem 1rem 2.5rem;
+      text-align: center;
+    }
+
+    header.hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    header.hero p {
+      font-size: 1.2rem;
+      color: #c0c0c0;
+      margin-bottom: 1rem;
     }
 
     .contact-bar {
       font-size: 0.95rem;
-      margin-bottom: 20px;
     }
 
     .contact-bar a {
@@ -73,7 +101,55 @@
       color: #ff5a5f;
     }
 
-    footer {
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    .project img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+      height: auto;
+      loading: lazy;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: #1b1f23;
+        width: 200px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        gap: 10px;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 10px;
+        font-size: 1rem;
+      }
+    }
+        footer {
       text-align: center;
       padding: 2rem 1rem;
       color: #ffffff;
@@ -81,10 +157,42 @@
       font-size: 0.95rem;
       border-top: 2px solid #444;
     }
+
+    footer a {
+      color: #60bdf3;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ff5a5f;
+    }
   </style>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
 </head>
 <body>
 
+
+
+  <!-- Sticky Top Navigation Bar -->
+  <div class="topnav">
+    <div class="logo">Alan Manoj</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="Alan_Resume.pdf" target="_blank">Resume</a>
+    </div>
+  </div>
+
+  <!-- Hero Header -->
   <header class="hero">
     <h1>Alan Manoj</h1>
     <p>Data Analyst | Power BI | Tableau | Excel | Python</p>
@@ -93,9 +201,8 @@
       <a href="https://www.linkedin.com/in/alan-manoj-a6636a324" target="_blank">🔗 LinkedIn</a> |
       <a href="https://github.com/alanmanoj007" target="_blank">💻 GitHub</a>
     </div>
-    <a class="resume-button" href="Alan_Manoj_Resume.pdf" target="_blank">Download Resume</a>
+    <a class="resume-button" href="Alan Manoj resume Updated.pdf" target="_blank">Download Resume</a>
   </header>
-
 
   <div class="container">
     <h2 id="about">About Me</h2>
