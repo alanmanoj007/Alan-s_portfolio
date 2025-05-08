@@ -11,7 +11,7 @@ Analyzed ER data to uncover patterns in patient flow, wait times, and treatment 
 - Severe cases more common in early mornings
 - Weekend treatments took longer on average
 
-## Overview of Dashboard
+## Overview of Dashboard -
 ![Screenshot 2025-03-08 124151](https://github.com/user-attachments/assets/839035dd-aab6-41ed-b74e-4314ba9239f2)
 
 
@@ -26,6 +26,9 @@ Designed a Tableau dashboard to analyze patterns in road accidents using real-wo
 - Year-over-year accident trend analysis
 - Key metrics: fatalities, injuries, accident count
 
+# Overview of Dashboard -
+![Screenshot 2025-03-08 120313](https://github.com/user-attachments/assets/1b240f57-7c3b-4b83-af33-b2a8c33efeff)
+
 # <a href= "https://github.com/alanmanoj007/Excel-Project-Gym-Supplements1">Project3: Gym Supplements Sales-Excel Dashboard</a>
 Built an Excel dashboard to analyze gym supplement sales across segments, products, and regions. Focused on identifying top-performing categories and optimizing discount strategies.
 
@@ -35,3 +38,6 @@ Built an Excel dashboard to analyze gym supplement sales across segments, produc
 - Top-selling products and revenue trends
 - Discount impact on profitability
 - Sunburst chart for product-wise analysis
+
+# Overview of Dashboard -
+![Screenshot 2025-03-08 162741](https://github.com/user-attachments/assets/8b84b0c4-2d8d-4af2-9470-4949717004fb)
