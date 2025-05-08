@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alan Manoj | Data Analyst Portfolio</title>
+  <meta name="description" content="Alan Manoj - Data Analyst Portfolio. Explore my work in Power BI, Tableau, Python, and Excel." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
@@ -33,7 +34,7 @@
     }
 
     .topnav .logo {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       font-weight: bold;
       letter-spacing: 1px;
     }
@@ -54,12 +55,12 @@
     header.hero {
       background-color: #1b1f23;
       color: white;
-      padding: 4rem 1rem 3rem;
+      padding: 3rem 1rem 3rem;
       text-align: center;
     }
 
     header.hero h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       font-weight: 700;
       margin-bottom: 0.5rem;
     }
@@ -87,7 +88,7 @@
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 90%;
       margin: 2rem auto;
       padding: 2rem;
       background-color: #ffffff;
@@ -126,18 +127,20 @@
     }
 
     .project img {
-      width: 75%;
+      width: 100%;
       max-width: 600px;
       display: block;
       margin: 1rem auto;
       border-radius: 8px;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+      height: auto;
+      loading: lazy;
     }
 
     .resume-button {
       margin-top: 20px;
       display: inline-block;
-      padding: 10px 18px;
+      padding: 12px 24px;
       background-color: #007acc;
       color: white;
       border-radius: 6px;
@@ -156,9 +159,28 @@
       color: #666;
       font-size: 0.95rem;
     }
+
+    @media (max-width: 768px) {
+      .topnav .logo {
+        font-size: 1.2rem;
+      }
+      header.hero h1 {
+        font-size: 2.5rem;
+      }
+      header.hero p {
+        font-size: 1.1rem;
+      }
+      .container {
+        padding: 1.5rem;
+      }
+      .resume-button {
+        padding: 10px 20px;
+      }
+    }
   </style>
 </head>
 <body>
+
 
   <!-- Sticky Top Navigation Bar -->
   <div class="topnav">
