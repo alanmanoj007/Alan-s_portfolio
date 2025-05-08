@@ -12,7 +12,7 @@ Analyzed ER data to uncover patterns in patient flow, wait times, and treatment 
 - Weekend treatments took longer on average
 
 ## Overview of Dashboard
-![Screenshot 2025-03-08 124151.png]
+!(Screenshot 2025-03-08 124151.png)
 
 
 # <a href="https://github.com/alanmanoj007/Road-Accidents-in-United-Kingdom-A-Tableau-Project">Project 2: Road Accidents in United Kingdom-a Tableau_Project</a>
