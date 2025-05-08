@@ -17,36 +17,64 @@
       color: #1e1e2f;
     }
 
-    header {
+    /* Top dark navbar */
+    .topnav {
+      background-color: #1b1f23;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      color: white;
+    }
+
+    .topnav .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .topnav .nav-links a {
+      color: #ddd;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
+
+    .topnav .nav-links a:hover {
+      color: #ff5a5f;
+    }
+
+    /* Main hero header */
+    header.hero {
+      background-color: #1b1f23;
+      color: white;
+      padding: 4rem 1rem 3rem;
       text-align: center;
-      padding: 3rem 1rem 1.5rem;
-      background: #ffffff;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
-    header h1 {
-      margin-bottom: 0.3rem;
-      font-size: 3rem;
-      color: #222f5b;
+    header.hero h1 {
+      font-size: 3.5rem;
       font-weight: 700;
+      margin-bottom: 0.5rem;
     }
 
-    <header style="background-color: #1b1f23; color: white; padding: 3rem 1rem 2rem; text-align: center;">
-  <h1 style="font-size: 3.5rem; font-weight: 700; margin: 0;">Alan Manoj</h1>
-  <p style="font-size: 1.2rem; color:
+    header.hero p {
+      font-size: 1.2rem;
+      color: #c0c0c0;
     }
 
     .contact-bar {
       margin-top: 1rem;
       font-size: 0.95rem;
-      color: #3a3a3a;
     }
 
     .contact-bar a {
       margin: 0 10px;
       text-decoration: none;
-      color: #005a9e;
-      font-weight: 600;
+      color: #60bdf3;
+      font-weight: 500;
       transition: color 0.3s ease;
     }
 
@@ -135,7 +163,20 @@
 </head>
 <body>
 
-  <header>
+  <!-- Dark Top Nav -->
+  <div class="topnav">
+    <div class="logo">Alan Manoj</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
     <h1>Alan Manoj</h1>
     <p>Data Analyst | Power BI | Tableau | Excel | Python</p>
     <div class="contact-bar">
@@ -145,6 +186,7 @@
     </div>
   </header>
 
+  <!-- Section Navigation Bar -->
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
