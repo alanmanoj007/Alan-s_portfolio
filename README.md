@@ -22,7 +22,7 @@ Designed a Tableau dashboard to analyze patterns in road accidents using real-wo
 - Year-over-year accident trend analysis
 - Key metrics: fatalities, injuries, accident count
 
-# <a href= "https://github.com/alanmanoj007/Excel-Project-Gym-Supplements1>Project3: Gym Supplements Sales-Excel Dashboard</a>
+# <a href= "https://github.com/alanmanoj007/Excel-Project-Gym-Supplements1">Project3: Gym Supplements Sales-Excel Dashboard</a>
 Built an Excel dashboard to analyze gym supplement sales across segments, products, and regions. Focused on identifying top-performing categories and optimizing discount strategies.
 
 **Tools:** Excel, Pivot Tables, Charts, Sunburst Diagram  
