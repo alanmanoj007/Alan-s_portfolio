@@ -136,6 +136,30 @@
       height: auto;
       loading: lazy;
     }
+        .container-box {
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 1000px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      transition: background-color 0.3s ease;
+    }
+
+    .container-box:nth-of-type(1) { background-color: #f9f9fc; }
+    .container-box:nth-of-type(2) { background-color: #f3f4f9; }
+    .container-box:nth-of-type(3) { background-color: #eef1f7; }
+    .container-box:nth-of-type(4) { background-color: #e9edf5; }
+    .container-box:nth-of-type(5) { background-color: #e4e9f3; }
+
+    .container-box h2 {
+      color: #1b1f23;
+      margin-top: 0;
+    }
+
+    .container-box p, .container-box ul {
+      color: #555;
+    }
 
     @media (max-width: 768px) {
       .menu-toggle {
@@ -222,57 +246,29 @@ function toggleMenu() {
     <a class="resume-button" href="Alan Manoj resume Updated.pdf" target="_blank">Download Resume</a>
   </header>
 
-  <div class="container">
-    <h2 id="about">About Me</h2>
-<p>I'm <strong>Alan Manoj</strong>, a data analyst with a strong mathematical foundation and a passion for turning complex data into impactful stories. With a Bachelor's in Mathematics and hands-on experience in <strong>Power BI, Tableau, Excel, and Python</strong>, I specialize in extracting insights that drive better business decisions.</p>
+  <div class="container-box" id="about">
+    <h2>About Me</h2>
+    <p>I'm <strong>Alan Manoj</strong>, a data analyst with a strong mathematical foundation and a passion for turning complex data into impactful stories. With a Bachelor's in Mathematics and hands-on experience in <strong>Power BI, Tableau, Excel, and Python</strong>, I specialize in extracting insights that drive better business decisions.</p>
+    <p>I’ve completed an intensive Data Analytics internship where I worked with real-world datasets using <strong>SQL, Pandas, NumPy, and machine learning techniques</strong>. Whether it’s creating interactive dashboards, performing in-depth statistical analysis, or forecasting trends, I thrive at solving problems through data.</p>
+    <p>Beyond the numbers, I’m a communicator and collaborator. I enjoy turning raw data into clear visualizations that decision-makers can trust. I’m always learning, always improving—and I’m excited to contribute to teams that value data-driven thinking.</p>
+  </div>
 
-<p>I’ve completed an intensive Data Analytics internship where I worked with real-world datasets using <strong>SQL, Pandas, NumPy, and machine learning techniques</strong>. Whether it’s creating interactive dashboards, performing in-depth statistical analysis, or forecasting trends, I thrive at solving problems through data.</p>
+  <div class="container-box" id="projects">
+    <h2>Projects</h2>
+    <p>Here are some of the projects I've worked on:</p>
+  </div>
 
-<p>Beyond the numbers, I’m a communicator and collaborator. I enjoy turning raw data into clear visualizations that decision-makers can trust. I’m always learning, always improving—and I’m excited to contribute to teams that value data-driven thinking.</p>
-
-<p>If you're looking for someone who combines analytical skills with a creative mindset and a hunger to grow, I'm ready to make an impact.</p>
-
-
-    <h2 id="projects">Projects</h2>
-
-    <div class="project">
-      <h3><a href="https://github.com/alanmanoj007/Powerbi-Hospital-Emergency-Room-Dashboard">Hospital Emergency Room Dashboard – Power BI</a></h3>
-      <p>Analyzed ER data to uncover patterns in patient flow, wait times, and treatment efficiency. Built a Power BI dashboard to assist hospital staff in decision making.</p>
-      <ul>
-        <li>Tools: Power BI, Excel, DAX</li>
-        <li>Highlights: Peak time 6–9 PM | 25% waited over 30 mins | Severe cases in early mornings</li>
-      </ul>
-      <img src="Screenshot 2025-05-08 074015.png" alt="Hospital Dashboard">
-    </div>
-
-    <div class="project">
-      <h3><a href="https://github.com/alanmanoj007/Road-Accidents-in-United-Kingdom-A-Tableau-Project">Road Accidents in the UK – Tableau</a></h3>
-      <p>Used Tableau to explore patterns in road accident data across the UK. Identified key metrics for public safety improvements.</p>
-      <ul>
-        <li>Tools: Tableau, Excel</li>
-        <li>Highlights: Heatmaps | Filters for time, weather, road type | Year-over-year trends</li>
-      </ul>
-      <img src="https://github.com/user-attachments/assets/1b240f57-7c3b-4b83-af33-b2a8c33efeff" alt="UK Accidents Dashboard">
-    </div>
-
-    <div class="project">
-      <h3><a href="https://github.com/alanmanoj007/Excel-Project-Gym-Supplements1">Gym Supplements Sales – Excel</a></h3>
-      <p>Built an Excel dashboard to analyze supplement sales across segments. Focused on top products and discount strategies.</p>
-      <ul>
-        <li>Tools: Excel, Pivot Tables, Charts</li>
-        <li>Highlights: Segment-wise sales | Top-sellers | Sunburst chart</li>
-      </ul>
-      <img src="Screenshot 2025-04-05 092711.png" alt="Gym Supplements Dashboard">
-    </div>
-
-    <h2 id="skills">Skills</h2>
+  <div class="container-box" id="skills">
+    <h2>Skills</h2>
     <ul>
       <li><strong>Technical Skills:</strong> Python, R, MySQL, HTML, Power BI, Tableau, Excel, Web Scraping, NumPy, Pandas, Machine Learning</li>
       <li><strong>Soft Skills:</strong> Team Collaboration, Communication, Adaptability, Data Analysis</li>
       <li><strong>Languages:</strong> English, Hindi, Malayalam</li>
     </ul>
+  </div>
 
-    <h2 id="experience">Experience</h2>
+  <div class="container-box" id="experience">
+    <h2>Experience</h2>
     <h3>Data Analytics Intern – Techolas Technologies, Palakkad</h3>
     <p><em>Aug 2024 – Feb 2025</em></p>
     <ul>
@@ -281,8 +277,10 @@ function toggleMenu() {
       <li>Used Python (Pandas, NumPy) and SQL to clean and transform data for analysis.</li>
       <li>Implemented ML algorithms (classification and regression) on real-world datasets.</li>
     </ul>
+  </div>
 
-    <h2 id="education">Education</h2>
+  <div class="container-box" id="education">
+    <h2>Education</h2>
     <h3>Bachelor of Science in Mathematics</h3>
     <p>Co-operative College, Manarkkad – Palakkad, Kerala, India</p>
     <ul>
