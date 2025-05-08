@@ -14,7 +14,7 @@
 
 ---
 
-## 👨‍💻 About Me
+##  About Me
 
 Hello! I'm **Alan Manoj**, a detail-oriented data analyst with a strong foundation in mathematics and a passion for transforming complex data into meaningful business insights.
 
