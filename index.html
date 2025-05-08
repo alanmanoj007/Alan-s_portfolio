@@ -17,7 +17,7 @@
       color: #1e1e2f;
     }
 
-    /* Top dark navbar */
+    /* Fixed Top Nav */
     .topnav {
       background-color: #1b1f23;
       display: flex;
@@ -25,6 +25,10 @@
       align-items: center;
       padding: 1rem 2rem;
       color: white;
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .topnav .logo {
@@ -46,7 +50,7 @@
       color: #ff5a5f;
     }
 
-    /* Main hero header */
+    /* Main header below nav */
     header.hero {
       background-color: #1b1f23;
       color: white;
@@ -79,29 +83,6 @@
     }
 
     .contact-bar a:hover {
-      color: #ff5a5f;
-    }
-
-    nav {
-      background: #ffffff;
-      padding: 0.8rem 1rem;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 600;
-      color: #007acc;
-      font-size: 0.95rem;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
       color: #ff5a5f;
     }
 
@@ -163,7 +144,7 @@
 </head>
 <body>
 
-  <!-- Dark Top Nav -->
+  <!-- Sticky Top Navigation Bar -->
   <div class="topnav">
     <div class="logo">Alan Manoj</div>
     <div class="nav-links">
@@ -175,7 +156,7 @@
     </div>
   </div>
 
-  <!-- Hero Section -->
+  <!-- Hero Header -->
   <header class="hero">
     <h1>Alan Manoj</h1>
     <p>Data Analyst | Power BI | Tableau | Excel | Python</p>
@@ -185,15 +166,6 @@
       <a href="https://github.com/alanmanoj007" target="_blank">💻 GitHub</a>
     </div>
   </header>
-
-  <!-- Section Navigation Bar -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-  </nav>
 
   <div class="container">
     <h2 id="about">About Me</h2>
