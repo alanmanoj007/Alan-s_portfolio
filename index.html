@@ -38,6 +38,7 @@
       font-weight: bold;
       letter-spacing: 1px;
       flex-shrink: 0;
+      color: #ffffff;
     }
 
     .menu-toggle {
@@ -62,6 +63,61 @@
 
     .nav-links a:hover {
       color: #ff5a5f;
+    }
+
+    header.hero {
+      background-color: #1b1f23;
+      color: white;
+      padding: 3rem 1rem 2.5rem;
+      text-align: center;
+    }
+
+    header.hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    header.hero p {
+      font-size: 1.2rem;
+      color: #c0c0c0;
+      margin-bottom: 1rem;
+    }
+
+    .contact-bar {
+      font-size: 0.95rem;
+    }
+
+    .contact-bar a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #60bdf3;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .contact-bar a:hover {
+      color: #ff5a5f;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    .project img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+      height: auto;
+      loading: lazy;
     }
 
     @media (max-width: 768px) {
@@ -101,6 +157,31 @@
   </script>
 </head>
 <body>
+
+<!-- Sticky Top Navigation Bar -->
+<div class="topnav">
+  <div class="logo">Alan Manoj</div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="Alan_Resume.pdf" target="_blank">Resume</a>
+  </div>
+</div>
+
+<!-- Hero Header -->
+<header class="hero">
+  <h1>Alan Manoj</h1>
+  <p>Data Analyst | Power BI | Tableau | Excel | Python</p>
+  <div class="contact-bar">
+    <a href="mailto:alanmanoj221@gmail.com">📧 alanmanoj221@gmail.com</a> |
+    <a href="https://www.linkedin.com/in/alan-manoj-a6636a324" target="_blank">🔗 LinkedIn</a> |
+    <a href="https://github.com/alanmanoj007" target="_blank">💻 GitHub</a>
+  </div>
+</header>
 
 <div class="topnav">
   <div class="logo">Alan Manoj</div>
