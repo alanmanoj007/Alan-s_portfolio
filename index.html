@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alan Manoj | Data Analyst Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -15,10 +19,9 @@
 
     header {
       text-align: center;
-      padding: 3rem 1rem 2rem;
+      padding: 3rem 1rem 1.5rem;
       background: #ffffff;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      position: relative;
     }
 
     header h1 {
@@ -50,6 +53,29 @@
     }
 
     .contact-bar a:hover {
+      color: #ff5a5f;
+    }
+
+    nav {
+      background: #ffffff;
+      padding: 0.8rem 1rem;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #007acc;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
       color: #ff5a5f;
     }
 
@@ -101,8 +127,6 @@
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
     }
 
-    }
-
     footer {
       text-align: center;
       padding: 2rem 1rem;
@@ -123,11 +147,19 @@
     </div>
   </header>
 
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+  </nav>
+
   <div class="container">
-    <h2>About Me</h2>
+    <h2 id="about">About Me</h2>
     <p>Hi, I'm Alan Manoj, a data analyst with a passion for transforming raw data into actionable insights. Skilled in Power BI, Tableau, Excel, and Python, I love solving real-world problems through data storytelling and visualizations.</p>
 
-    <h2>Projects</h2>
+    <h2 id="projects">Projects</h2>
 
     <div class="project">
       <h3><a href="https://github.com/alanmanoj007/Powerbi-Hospital-Emergency-Room-Dashboard">Hospital Emergency Room Dashboard – Power BI</a></h3>
@@ -159,24 +191,24 @@
       <img src="Screenshot 2025-04-05 092711.png" alt="Gym Supplements Dashboard">
     </div>
 
-    <h2>Skills</h2>
+    <h2 id="skills">Skills</h2>
     <ul>
       <li><strong>Technical Skills:</strong> Python, R, MySQL, HTML, Power BI, Tableau, Excel, Web Scraping, NumPy, Pandas, Machine Learning</li>
       <li><strong>Soft Skills:</strong> Team Collaboration, Communication, Adaptability, Data Analysis</li>
       <li><strong>Languages:</strong> English, Hindi, Malayalam</li>
     </ul>
 
-    <h2>Experience</h2>
+    <h2 id="experience">Experience</h2>
     <h3>Data Analytics Intern – Techolas Technologies, Palakkad</h3>
     <p><em>Aug 2024 – Feb 2025</em></p>
     <ul>
-      <li>Comprehensive training in Python, SQL, Power Bi, Tableau, Excel and Machine Learning.</li>
+      <li>Comprehensive training in Python, SQL, Machine Learning, Tableau, and Excel.</li>
       <li>Built and deployed dashboards using Tableau and Power BI to communicate actionable insights.</li>
       <li>Used Python (Pandas, NumPy) and SQL to clean and transform data for analysis.</li>
       <li>Implemented ML algorithms (classification and regression) on real-world datasets.</li>
     </ul>
 
-    <h2>Education</h2>
+    <h2 id="education">Education</h2>
     <h3>Bachelor of Science in Mathematics</h3>
     <p>Co-operative College, Manarkkad – Palakkad, Kerala, India</p>
     <ul>
