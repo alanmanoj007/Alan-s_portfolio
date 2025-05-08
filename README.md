@@ -1,6 +1,6 @@
 <!-- Alan Manoj's Portfolio -->
 
-<h1 align="center">💼 Alan Manoj's Data Portfolio</h1>
+<h1 align="center"> Alan Manoj's Data Portfolio</h1>
 
 <p align="center">
   <em>BSc Mathematics Graduate • Data Analyst • Dashboard Developer • Based in Kerala, India</em>
@@ -84,7 +84,7 @@ I’m open to freelance projects, full-time roles, and collaboration opportuniti
 
 -  **Email:** alanmanoj221@gmail.com  
 -  **LinkedIn:** [linkedin.com/in/alanmanoj007](www.linkedin.com/in/alan-manoj-a6636a324)  
-- 🗂 **GitHub:** [github.com/alanmanoj007](https://github.com/alanmanoj007)
+-  **GitHub:** [github.com/alanmanoj007](https://github.com/alanmanoj007)
 
 ---
 
